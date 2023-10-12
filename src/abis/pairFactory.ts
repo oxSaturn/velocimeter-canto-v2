@@ -1,4 +1,4 @@
-export default [
+export const abi = [
     {
         "type": "constructor",
         "inputs": []
