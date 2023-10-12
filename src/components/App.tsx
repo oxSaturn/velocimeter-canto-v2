@@ -269,6 +269,14 @@ function WithdrawFromPair({
             write?.();
           }
         }}
+        disabled={
+          !isApproveNeeded &&
+          (quoting ||
+            config.request === undefined ||
+            isLoading ||
+            error !== null ||
+            write === undefined)
+        }
       >
         {isApproveNeeded ? "Approve to Withdraw" : "Withdraw All"}
       </button>
