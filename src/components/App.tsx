@@ -144,6 +144,7 @@ function BalanceOfPair({ pair: pairAddress }: { pair: `0x${string}` }) {
     functionName: "balanceOf",
     args: [address!],
     enabled: address !== undefined,
+    watch: true,
   });
   if (!isConnected) return null;
   if (isLoading) return <div>loading</div>;
