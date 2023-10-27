@@ -30,7 +30,7 @@ const config = createConfig({
   }),
 });
 
-const router = "0x9B2920e72dF6E1A7053bEa7235c65079F5104398";
+const router = "0x8e2e2f70B4bD86F82539187A634FB832398cc771";
 export default function App() {
   return (
     <WagmiConfig config={config}>
